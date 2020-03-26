@@ -93,7 +93,7 @@
             this.list[i].state = await crawler.run(v)
           }
         } else {
-          alert('error')
+          alert('Không thể đăng nhập! Cookie của bạn đã hết hạn hoặc không chính xác. Hãy lấy lại cookie và lưu lại.')
         }
         await crawler.browser.close()
         this.running = false
